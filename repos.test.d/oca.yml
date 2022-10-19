@@ -43,6 +43,15 @@ account-reconcile:
   merges:
     - origin $ODOO_VERSION
     
+brand:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/brand
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    
 connector:
   defaults:
     depth: 1
