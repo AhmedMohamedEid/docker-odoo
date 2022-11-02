@@ -163,6 +163,15 @@ rest-framework:
   merges:
     - origin $ODOO_VERSION
 
+sale-promotion:
+  defaults:
+    depth: 1
+  remotes:
+    moka: https://github.com/Moka-Tourisme/sale-promotion
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 sale-workflow:
   defaults:
     depth: 1
