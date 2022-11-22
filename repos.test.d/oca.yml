@@ -168,9 +168,9 @@ sale-promotion:
     depth: 1
   remotes:
     moka: https://github.com/Moka-Tourisme/sale-promotion
-  target: origin $ODOO_VERSION
+  target: moka $ODOO_VERSION
   merges:
-    - origin $ODOO_VERSION
+    - moka $ODOO_VERSION
 
 sale-workflow:
   defaults:
