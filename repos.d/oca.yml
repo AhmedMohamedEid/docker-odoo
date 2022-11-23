@@ -197,6 +197,15 @@ rest-framework:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    
+sale-promotion:
+  defaults:
+    depth: 1
+  remotes:
+    moka: https://github.com/Moka-Tourisme/sale-promotion
+  target: moka $ODOO_VERSION
+  merges:
+    - moka $ODOO_VERSION
 
 sale-workflow:
   defaults:
