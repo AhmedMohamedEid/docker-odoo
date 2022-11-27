@@ -32,7 +32,7 @@ account-financial-tools:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/1301/head # account_check_deposit
+    #- origin refs/pull/1301/head # account_check_deposit
 
 account-reconcile:
   defaults:
