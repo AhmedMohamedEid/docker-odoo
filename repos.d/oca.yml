@@ -102,7 +102,7 @@ e-commerce:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/656/head  # website_sale_cart_expire
+    #- origin refs/pull/656/head  # website_sale_cart_expire
 
 event:
   remotes:
@@ -111,9 +111,9 @@ event:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/257/head  # event_registration_mail_compose
+    #- origin refs/pull/257/head  # event_registration_mail_compose
     - origin refs/pull/258/head  # event_registration_sms_compose
-    - origin refs/pull/260/head  # website_event_sale_cart_quantity_readonly
+    #- origin refs/pull/260/head  # website_event_sale_cart_quantity_readonly
     - origin refs/pull/275/head  # event_session
     - origin refs/pull/276/head  # event_sale_session
     - moka 15.0-add-website-event-session
@@ -158,7 +158,7 @@ pos:
     # So, before anything else, merge this branch that sets a specific merging strategy.
     - moka 15.0-fix-git-aggregate
     # Pending OCA PRs:
-    - origin refs/pull/805/head  # pos_sale_pos_event_sale
+    #- origin refs/pull/805/head  # pos_sale_pos_event_sale
     - origin refs/pull/808/head  # pos_event_sale_session
     - origin refs/pull/810/head  # pos_sale_pos_event_sale_session
 
@@ -205,7 +205,7 @@ sale-reporting:
   merges:
     - origin $ODOO_VERSION
     # Pending OCA PRs:
-    - origin refs/pull/163/head  # sale_layout_category_hide_detail    
+    #- origin refs/pull/163/head  # sale_layout_category_hide_detail    
     
 sale-promotion:
   defaults:
@@ -249,7 +249,7 @@ server-tools:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/2340/head # MIG iap_alternative_provider
+    #- origin refs/pull/2340/head # MIG iap_alternative_provider
 
 server-ux:
   defaults:
@@ -266,7 +266,7 @@ social:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/933/head  # #1740 fix mail debrand
+    #- origin refs/pull/933/head  # #1740 fix mail debrand
 
 timesheet:
   defaults:
