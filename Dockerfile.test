@@ -1,4 +1,4 @@
-FROM ghcr.io/odoo-it/docker-odoo:15.0
+FROM ghcr.io/odoo-it/docker-odoo:15.0.1.2.0
 
 # Install Odoo
 COPY odoo.yml $RESOURCES/odoo.yml
