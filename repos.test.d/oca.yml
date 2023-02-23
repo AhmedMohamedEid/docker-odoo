@@ -70,6 +70,15 @@ contract:
   merges:
     - origin $ODOO_VERSION
 
+credit-control :
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/credit-control
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 e-commerce:
   remotes:
     origin: https://github.com/OCA/e-commerce
