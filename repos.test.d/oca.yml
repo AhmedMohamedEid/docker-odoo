@@ -111,6 +111,16 @@ l10n-france:
   merges:
     - origin $ODOO_VERSION
 
+
+mis-builder:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/mis-builder
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 partner-contact:
   defaults:
     depth: 1
