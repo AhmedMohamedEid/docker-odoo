@@ -74,3 +74,10 @@ moka-project:
   merges:
     - origin $ODOO_VERSION
   target: origin $ODOO_VERSION
+  
+l10n_france:
+  remotes:
+    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/l10n-france
+  merges:
+    - origin $ODOO_VERSION
+  target: origin $ODOO_VERSION
