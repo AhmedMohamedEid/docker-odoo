@@ -79,6 +79,24 @@ credit-control :
   merges:
     - origin $ODOO_VERSION
 
+crm :
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/crm
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+edi :
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/edi
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 e-commerce:
   remotes:
     origin: https://github.com/OCA/e-commerce
