@@ -134,7 +134,7 @@ event:
     #- origin refs/pull/260/head  # website_event_sale_cart_quantity_readonly
     - origin refs/pull/275/head  # event_session
     - origin refs/pull/276/head  # event_sale_session
-    - moka refs/pull/5/head # Fix mail not sent on event
+    #- moka refs/pull/5/head # Fix mail not sent on event
     - moka 15.0-add-website-event-session
     - moka 15.0-add-website-event-sale-session
 
