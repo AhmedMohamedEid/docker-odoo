@@ -105,12 +105,25 @@ crm:
   merges:
     - origin $ODOO_VERSION
 
-e-commerce:
+delivery-carrier:
+  defaults:
+    depth: 1
   remotes:
-    origin: https://github.com/OCA/e-commerce
+    origin: https://github.com/OCA/delivery-carrier
+    moka: https://github.com/Moka-Tourisme/delivery-carrier
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - moka 15.0-delivery-withdrawal-method
+
+e-commerce:
+  remotes:
+    origin: https://github.com/OCA/e-commerce
+    moka: https://github.com/Moka-Tourisme/e-commerce
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    - moka 15.0-website_sale_delivery_withdrawal
     #- origin refs/pull/656/head  # website_sale_cart_expire
     
 edi:
