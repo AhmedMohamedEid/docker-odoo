@@ -106,8 +106,6 @@ crm:
     - origin $ODOO_VERSION
 
 delivery-carrier:
-  defaults:
-    depth: 1
   remotes:
     origin: https://github.com/OCA/delivery-carrier
     moka: https://github.com/Moka-Tourisme/delivery-carrier
