@@ -112,7 +112,7 @@ delivery-carrier:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - moka refs/pull/2/head
+    - moka refs/pull/3/head
 
 e-commerce:
   remotes:
@@ -121,7 +121,7 @@ e-commerce:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - moka refs/pull/2/head
+    - moka refs/pull/3/head
     #- origin refs/pull/656/head  # website_sale_cart_expire
     
 edi:
