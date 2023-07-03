@@ -150,6 +150,15 @@ event:
     - moka 15.0-add-website-event-sale-session
     - moka 15.0-add-event-portal
 
+margin-analysis:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/margin-analysis
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 mis-builder:
   defaults:
     depth: 1
