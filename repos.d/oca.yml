@@ -149,6 +149,7 @@ event:
     - moka 15.0-add-website-event-session
     - moka 15.0-add-website-event-sale-session
     - moka 15.0-add-event-portal
+    - moka 15.0-fix-event-mail-session
 
 margin-analysis:
   defaults:
