@@ -36,11 +36,9 @@ moka-welcome:
 moka-billetterie:
   remotes:
     origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-billetterie
-  target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin 15.0-add-event_session_ticket_publish
-    - origin 15.0-event-pass
+  target: origin $ODOO_VERSION
 
 moka-depot-vente:
    remotes:
