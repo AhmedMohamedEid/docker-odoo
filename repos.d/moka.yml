@@ -8,24 +8,6 @@
     - origin $ODOO_VERSION
   target: origin $ODOO_VERSION
 
-# backend_theme:
-#   remotes:
-#     origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/backend_theme
-#   merges:
-#     - origin $ODOO_VERSION
-#   target: origin $ODOO_VERSION
-
-# 000-moka-thirdparty:
-#   # Contains payment_payzen in version 12.0 use
-#   # payment_lyra from lyra repo in version 15.0
-#   remotes:
-#     origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-thirdparty
-#   merges:
-#     - origin $ODOO_VERSION
-#   target: origin $ODOO_VERSION
-
-# Moka Repositories
-
 moka-welcome:
   remotes:
     origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-welcome
@@ -71,6 +53,13 @@ moka-role:
 moka-project:
   remotes:
     origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-project
+  merges:
+    - origin $ODOO_VERSION
+  target: origin $ODOO_VERSION
+
+moka-setup:
+  remotes:
+    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-setup
   merges:
     - origin $ODOO_VERSION
   target: origin $ODOO_VERSION
