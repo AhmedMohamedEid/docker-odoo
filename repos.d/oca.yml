@@ -151,6 +151,24 @@ event:
     - moka 15.0-add-event-portal-ticket
     - moka 15.0-fix-event-mail-session
 
+knowledge:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/knowledge
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+l10n-france:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/l10n-france
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 margin-analysis:
   defaults:
     depth: 1
@@ -165,15 +183,6 @@ mis-builder:
     depth: 1
   remotes:
     origin: https://github.com/OCA/mis-builder
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-l10n-france:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/l10n-france
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
