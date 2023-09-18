@@ -252,6 +252,15 @@ queue:
   merges:
     - origin $ODOO_VERSION
 
+reporting-engine:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/reporting-engine
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 rest-framework:
   defaults:
     depth: 1
