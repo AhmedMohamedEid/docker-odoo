@@ -25,13 +25,6 @@
 #   target: origin $ODOO_VERSION
 
 # Moka Repositories
-
-event:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/event
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
   
 moka-welcome:
   remotes:
