@@ -211,6 +211,7 @@ pos:
     - moka 15.0-add-pos-event-sale-express
     - moka 15.0-add-pos-event-sale-ticket-order
     - moka 15.0-pos-restaurant-better-readability
+    - moka $ODOO_VERSION
     # Pending OCA PRs:
     #- origin refs/pull/805/head  # pos_sale_pos_event_sale
     - origin refs/pull/808/head  # pos_event_sale_session
