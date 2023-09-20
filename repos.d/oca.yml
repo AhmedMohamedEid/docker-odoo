@@ -324,13 +324,13 @@ server-tools:
     #- origin refs/pull/2340/head # MIG iap_alternative_provider
 
 server-ux:
-  defaults:
-    depth: 1
   remotes:
     origin: https://github.com/OCA/server-ux
+    moka: https://github.com/Moka-Tourisme/server-ux
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - moka $ODOO_VERSION
 
 social:
   remotes:
