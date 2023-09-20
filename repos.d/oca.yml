@@ -340,6 +340,15 @@ social:
     - origin $ODOO_VERSION
     #- origin refs/pull/933/head  # #1740 fix mail debrand
 
+stock-logistics-barcode:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-barcode
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 timesheet:
   defaults:
     depth: 1
