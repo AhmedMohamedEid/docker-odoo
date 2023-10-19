@@ -18,8 +18,6 @@ agreement:
     - origin $ODOO_VERSION
 
 account-budgeting:
-  defaults:
-    depth: 1
   remotes:
     origin: https://github.com/OCA/account-budgeting
   target: origin $ODOO_VERSION
