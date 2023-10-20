@@ -44,6 +44,13 @@ account-financial-tools:
     - origin $ODOO_VERSION
     #- origin refs/pull/1301/head # account_check_deposit
 
+account-financial-reporting:
+  remotes:
+    origin: https://github.com/OCA/account-financial-reporting
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 account-reconcile:
   defaults:
     depth: 1
@@ -88,13 +95,12 @@ connector-telephony:
     - origin $ODOO_VERSION
 
 contract:
-  defaults:
-    depth: 1
   remotes:
     origin: https://github.com/OCA/contract
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - origin refs/pull/1006/head
 
 credit-control :
   defaults:
@@ -207,13 +213,13 @@ product-pack:
     - origin $ODOO_VERSION
 
 project:
-  defaults:
-    depth: 1
   remotes:
     origin: https://github.com/OCA/project
+    moka: https://github.com/Moka-Tourisme/project
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - moka $ODOO_VERSION
     
 purchase-workflow:
   defaults:
@@ -268,13 +274,13 @@ sale-reporting:
 #    - moka $ODOO_VERSION
 
 sale-workflow:
-  defaults:
-    depth: 1
   remotes:
     origin: https://github.com/OCA/sale-workflow
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - origin refs/pull/2325/head
+    - origin refs/pull/2450/head
 
 server-auth:
   defaults:
@@ -284,7 +290,7 @@ server-auth:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    
+
 server-brand:
   defaults:
     depth: 1
