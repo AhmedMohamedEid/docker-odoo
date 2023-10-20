@@ -1,72 +1,72 @@
-# We use 000- to make sure these repositories are loaded before any other
-# in case we have custom duplicates of external addons
-
-000-moka-custom:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-custom
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
-
-moka-welcome:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-welcome
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
-
-moka-billetterie:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-billetterie
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
-
-moka-depot-vente:
-   remotes:
-     origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-depot-vente
-   merges:
-     - origin $ODOO_VERSION
-   target: origin $ODOO_VERSION
-
-moka-pos:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-pos
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
-
-payment:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/payment
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
-
-moka-role:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-role
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
-
-moka-project:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-project
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
-
-moka-setup:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-setup
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
-  
-l10n_france:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/l10n-france
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
+## We use 000- to make sure these repositories are loaded before any other
+## in case we have custom duplicates of external addons
+#
+#000-moka-custom:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-custom
+#  merges:
+#    - origin $ODOO_VERSION
+#  target: origin $ODOO_VERSION
+#
+#moka-welcome:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-welcome
+#  merges:
+#    - origin $ODOO_VERSION
+#  target: origin $ODOO_VERSION
+#
+#moka-billetterie:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-billetterie
+#  merges:
+#    - origin $ODOO_VERSION
+#  target: origin $ODOO_VERSION
+#
+#moka-depot-vente:
+#   remotes:
+#     origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-depot-vente
+#   merges:
+#     - origin $ODOO_VERSION
+#   target: origin $ODOO_VERSION
+#
+#moka-pos:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-pos
+#  merges:
+#    - origin $ODOO_VERSION
+#  target: origin $ODOO_VERSION
+#
+#payment:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/payment
+#  merges:
+#    - origin $ODOO_VERSION
+#  target: origin $ODOO_VERSION
+#
+#moka-role:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-role
+#  merges:
+#    - origin $ODOO_VERSION
+#  target: origin $ODOO_VERSION
+#
+#moka-project:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-project
+#  merges:
+#    - origin $ODOO_VERSION
+#  target: origin $ODOO_VERSION
+#
+#moka-setup:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-setup
+#  merges:
+#    - origin $ODOO_VERSION
+#  target: origin $ODOO_VERSION
+#
+#l10n_france:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/l10n-france
+#  merges:
+#    - origin $ODOO_VERSION
+#  target: origin $ODOO_VERSION

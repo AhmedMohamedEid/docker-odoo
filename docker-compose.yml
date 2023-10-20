@@ -12,14 +12,14 @@ services:
     volumes:
       - postgres:/var/lib/postgresql/data/pgdata
 
-  odoo:
-    image: ghcr.io/moka-mourisme/docker-moka:15.0
+  odoo16:
+    image: ghcr.io/moka-mourisme/docker-moka:16.0
     build:
       context: .
       dockerfile: Dockerfile
       args:
         GITHUB_USER: bot-moka
-        GITHUB_TOKEN: _REPLACE_WITH_GITHUB_X_ACCESS_TOKEN_
+        GITHUB_TOKEN: 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
     environment:
       TZ: Europe/Paris
       LOG_LEVEL: info

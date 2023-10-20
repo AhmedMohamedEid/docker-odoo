@@ -18,12 +18,14 @@ agreement:
     - origin $ODOO_VERSION
 
 account-budgeting:
+  defaults:
+    depth: 1
   remotes:
     origin: https://github.com/OCA/account-budgeting
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/55/head # Accont Budget OCA
+#    - origin refs/pull/55/head # Accont Budget OCA
 
 account-closing:
   defaults:
@@ -84,7 +86,6 @@ connector-telephony:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/270/head # ADD sms_sendinblue_http
 
 contract:
   defaults:
@@ -116,21 +117,16 @@ crm:
 delivery-carrier:
   remotes:
     origin: https://github.com/OCA/delivery-carrier
-    moka: https://github.com/Moka-Tourisme/delivery-carrier
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - moka refs/pull/4/head
 
 e-commerce:
   remotes:
     origin: https://github.com/OCA/e-commerce
-    moka: https://github.com/Moka-Tourisme/e-commerce
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - moka $ODOO_VERSION
-    #- origin refs/pull/656/head  # website_sale_cart_expire
     
 edi:
   defaults:
@@ -144,21 +140,10 @@ edi:
 event:
   remotes:
     origin: https://github.com/OCA/event
-    moka: https://github.com/Moka-Tourisme/event
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    #- origin refs/pull/257/head  # event_registration_mail_compose
-    - origin refs/pull/258/head  # event_registration_sms_compose
-    #- origin refs/pull/260/head  # website_event_sale_cart_quantity_readonly
-    - origin refs/pull/275/head  # event_session
-    - origin refs/pull/276/head  # event_sale_session
-    #- moka refs/pull/5/head # Fix mail not sent on event, edit on oca
-    - moka 15.0-add-website-event-session
-    - moka 15.0-add-website-event-sale-session
-    - moka 15.0-add-event-portal
-    - moka 15.0-add-event-portal-ticket
-    - moka 15.0-fix-event-mail-session
+
 
 knowledge:
   defaults:
@@ -208,23 +193,9 @@ partner-contact:
 pos:
   remotes:
     origin: https://github.com/OCA/pos
-    moka: https://github.com/Moka-Tourisme/pos
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    # Prevent common merge conflicts in OCA PRs
-    # Some PRs will cause conflicts due to multiple changes on files like test-requirements.txt
-    # So, before anything else, merge this branch that sets a specific merging strategy.
-    - moka 15.0-fix-git-aggregate
-    - moka 15.0-fix-pos-event-sale
-    - moka 15.0-add-pos-event-sale-express
-    - moka 15.0-add-pos-event-sale-ticket-order
-    - moka 15.0-pos-restaurant-better-readability
-    - moka $ODOO_VERSION
-    # Pending OCA PRs:
-    #- origin refs/pull/805/head  # pos_sale_pos_event_sale
-    - origin refs/pull/808/head  # pos_event_sale_session
-    - origin refs/pull/810/head  # pos_sale_pos_event_sale_session
 
 product-pack:
   defaults:
@@ -286,17 +257,15 @@ sale-reporting:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    # Pending OCA PRs:
-    #- origin refs/pull/163/head  # sale_layout_category_hide_detail    
-    
-sale-promotion:
-  defaults:
-    depth: 1
-  remotes:
-    moka: https://github.com/Moka-Tourisme/sale-promotion
-  target: moka $ODOO_VERSION
-  merges:
-    - moka $ODOO_VERSION
+
+#sale-promotion:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    moka: https://github.com/Moka-Tourisme/sale-promotion
+#  target: moka $ODOO_VERSION
+#  merges:
+#    - moka $ODOO_VERSION
 
 sale-workflow:
   defaults:
@@ -336,11 +305,9 @@ server-tools:
 server-ux:
   remotes:
     origin: https://github.com/OCA/server-ux
-    moka: https://github.com/Moka-Tourisme/server-ux
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - moka $ODOO_VERSION
 
 social:
   remotes:
@@ -380,8 +347,13 @@ web:
 website:
   remotes:
     origin: https://github.com/OCA/website
-    moka: https://github.com/Moka-Tourisme/website
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - moka 15.0-add-membership
+
+open-upgrade:
+  remotes:
+    origin: https://github.com/OCA/OpenUpgrade
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
