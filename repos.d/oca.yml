@@ -359,6 +359,15 @@ web:
   merges:
     - origin $ODOO_VERSION
 
+web-api:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/web-api
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 website:
   remotes:
     origin: https://github.com/OCA/website
