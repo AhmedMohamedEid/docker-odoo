@@ -196,6 +196,13 @@ partner-contact:
   merges:
     - origin $ODOO_VERSION
 
+payment:
+ remotes:
+   origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/payment
+ merges:
+   - origin $ODOO_VERSION
+ target: origin $ODOO_VERSION
+
 pos:
   remotes:
     origin: https://github.com/OCA/pos
