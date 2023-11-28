@@ -4,7 +4,8 @@
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    # [FIX] event: badge report dates in event's tz
+    # [FIX] oid in serialize
+    - origin refs/pull/141831/head
 
 design-themes:
   defaults:
