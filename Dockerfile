@@ -22,3 +22,5 @@ USER odoo
 
 # Additional configs
 COPY conf.d/* $RESOURCES/conf.d/
+USER root
+RUN chmod 777 -R $RESOURCES/
