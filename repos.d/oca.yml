@@ -95,6 +95,15 @@ bank-payment:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+
+community-data-files:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/community-data-files
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
     
 connector:
   defaults:
