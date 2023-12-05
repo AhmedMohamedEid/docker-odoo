@@ -35,6 +35,15 @@ account-closing:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+
+account-invoicing:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/account-invoicing
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
     
 account-financial-tools:
   remotes:
@@ -78,6 +87,15 @@ brand:
   merges:
     - origin $ODOO_VERSION
 
+bank-payment:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/bank-payment
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+    
 connector:
   defaults:
     depth: 1
@@ -303,6 +321,15 @@ server-auth:
     depth: 1
   remotes:
     origin: https://github.com/OCA/server-auth
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
+server-env:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/server-env
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
