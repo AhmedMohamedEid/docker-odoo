@@ -17,3 +17,4 @@ pycountry
 
 astor
 factur-x
+requests_oauthlib
