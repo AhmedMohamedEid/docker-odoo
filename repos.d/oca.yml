@@ -188,13 +188,13 @@ knowledge:
     - origin $ODOO_VERSION
 
 l10n-france:
-  defaults:
-    depth: 1
   remotes:
     origin: https://github.com/OCA/l10n-france
+    moka: https://github.com/Moka-Tourisme/l10n-france
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - moka $ODOO_VERSION
 
 margin-analysis:
   defaults:
