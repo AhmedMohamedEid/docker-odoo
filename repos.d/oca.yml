@@ -214,6 +214,15 @@ mis-builder:
   merges:
     - origin $ODOO_VERSION
 
+mis-builder-contrib:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/mis-builder-contrib
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 partner-contact:
   defaults:
     depth: 1
