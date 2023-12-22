@@ -240,11 +240,14 @@ payment:
  target: origin $ODOO_VERSION
 
 pos:
+  defaults:
+    depth: 1
   remotes:
     origin: https://github.com/OCA/pos
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - origin refs/pull/1022/head
 
 product-pack:
   defaults:
