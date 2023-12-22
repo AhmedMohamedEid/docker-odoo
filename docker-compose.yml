@@ -3,7 +3,7 @@ version: '2.4'
 services:
 
   db:
-    image: postgres:10.6
+    image: postgres:16
     environment:
       POSTGRES_USER: odoo
       POSTGRES_PASSWORD: odoo
