@@ -44,7 +44,7 @@ services:
       - filestore:/home/odoo/data
       # These modules are loaded with higher priority than the ones in the image
       # If a module has the same name, this one will be used.
-      - ./custom_code:/home/odoo/custom/repositories:rw,z
+      - ./custom_code:/home/odoo/src/user
 
 volumes:
   postgres:
