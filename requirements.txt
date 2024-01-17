@@ -18,3 +18,8 @@ pycountry
 astor
 factur-x
 requests_oauthlib
+
+a2wsgi
+ujson
+python-multipart
+fastapi
