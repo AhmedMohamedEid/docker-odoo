@@ -240,14 +240,13 @@ payment:
  target: origin $ODOO_VERSION
 
 pos:
-  defaults:
-    depth: 1
   remotes:
     origin: https://github.com/OCA/pos
+    moka: https://github.com/Moka-Tourisme/pos
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/1022/head
+    - moka $ODOO_VERSION
 
 product-pack:
   defaults:
