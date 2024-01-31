@@ -224,13 +224,13 @@ mis-builder-contrib:
     - origin $ODOO_VERSION
 
 partner-contact:
-  defaults:
-    depth: 1
   remotes:
     origin: https://github.com/OCA/partner-contact
+    moka: https://github.com/Moka-Tourisme/partner-contact
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - moka $ODOO_VERSION
 
 payment:
  remotes:
