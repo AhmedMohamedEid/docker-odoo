@@ -124,10 +124,11 @@ connector-telephony:
 contract:
   remotes:
     origin: https://github.com/OCA/contract
+    moka: https://github.com/Moka-Tourisme/contract
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/1006/head
+    - moka $ODOO_VERSION
 
 credit-control :
   defaults:
