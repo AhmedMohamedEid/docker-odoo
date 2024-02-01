@@ -23,3 +23,5 @@ a2wsgi
 ujson
 python-multipart
 fastapi
+python-barcode
+unicodecsv
