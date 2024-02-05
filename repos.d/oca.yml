@@ -206,6 +206,13 @@ margin-analysis:
   merges:
     - origin $ODOO_VERSION
 
+moka-billetterie:
+  remotes:
+    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-billetterie
+  merges:
+    - origin $ODOO_VERSION
+  target: origin $ODOO_VERSION
+
 mis-builder:
   defaults:
     depth: 1
