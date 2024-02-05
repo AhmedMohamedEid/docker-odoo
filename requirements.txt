@@ -25,3 +25,4 @@ python-multipart
 fastapi
 python-barcode
 unicodecsv
+barcode
