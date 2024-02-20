@@ -124,11 +124,10 @@ connector-telephony:
 contract:
   remotes:
     origin: https://github.com/OCA/contract
-    moka: https://github.com/Moka-Tourisme/contract
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - moka $ODOO_VERSION
+    - origin refs/pull/1006/head
 
 credit-control :
   defaults:
@@ -177,7 +176,6 @@ event:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/357/head
 
 
 knowledge:
@@ -207,13 +205,6 @@ margin-analysis:
   merges:
     - origin $ODOO_VERSION
 
-moka-billetterie:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-billetterie
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
-
 mis-builder:
   defaults:
     depth: 1
@@ -233,13 +224,13 @@ mis-builder-contrib:
     - origin $ODOO_VERSION
 
 partner-contact:
+  defaults:
+    depth: 1
   remotes:
     origin: https://github.com/OCA/partner-contact
-    moka: https://github.com/Moka-Tourisme/partner-contact
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - moka $ODOO_VERSION
 
 payment:
  remotes:
@@ -251,11 +242,9 @@ payment:
 pos:
   remotes:
     origin: https://github.com/OCA/pos
-    moka: https://github.com/Moka-Tourisme/pos
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - moka $ODOO_VERSION
 
 product-pack:
   defaults:
@@ -312,13 +301,12 @@ reporting-engine:
     - origin $ODOO_VERSION
 
 rest-framework:
-  defaults:
-    depth: 1
   remotes:
     origin: https://github.com/OCA/rest-framework
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    - origin refs/pull/416/head
     
 sale-reporting:
   remotes:
@@ -394,14 +382,6 @@ social:
   merges:
     - origin $ODOO_VERSION
     #- origin refs/pull/933/head  # #1740 fix mail debrand
-
-
-stock-logistics-warehouse:
-  remotes:
-    origin: https://github.com/OCA/stock-logistics-warehouse
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
 
 stock-logistics-barcode:
   defaults:
