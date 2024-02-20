@@ -205,6 +205,13 @@ margin-analysis:
   merges:
     - origin $ODOO_VERSION
 
+moka-billetterie:
+  remotes:
+    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-billetterie
+  merges:
+    - origin $ODOO_VERSION
+  target: origin $ODOO_VERSION
+
 mis-builder:
   defaults:
     depth: 1
@@ -382,6 +389,14 @@ social:
   merges:
     - origin $ODOO_VERSION
     #- origin refs/pull/933/head  # #1740 fix mail debrand
+
+
+stock-logistics-warehouse:
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-warehouse
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
 
 stock-logistics-barcode:
   defaults:
