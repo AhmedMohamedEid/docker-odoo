@@ -23,7 +23,6 @@ a2wsgi
 ujson
 python-multipart
 fastapi
-python-barcode
+python-barcode==0.14.0
 unicodecsv
-barcode
 json-parser
