@@ -177,7 +177,6 @@ event:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - origin refs/pull/357/head
 
 
 knowledge:
