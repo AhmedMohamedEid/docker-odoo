@@ -393,6 +393,12 @@ social:
     - origin $ODOO_VERSION
     #- origin refs/pull/933/head  # #1740 fix mail debrand
 
+stock-logistics-availability:
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-availability
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
 
 stock-logistics-warehouse:
   remotes:
