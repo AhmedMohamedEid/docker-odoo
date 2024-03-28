@@ -1,4 +1,4 @@
-FROM ghcr.io/odoo-it/docker-odoo:16.0.2.0.2
+FROM ghcr.io/odoo-it/docker-odoo:16.0.3.0.1
 #Install yaml
 RUN pip install pyyaml
 # Install gitaggregate
