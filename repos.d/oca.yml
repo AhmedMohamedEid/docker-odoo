@@ -209,9 +209,10 @@ margin-analysis:
 moka-billetterie:
   remotes:
     origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-billetterie
+  target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
+    - origin refs/pull/108/head
 
 mis-builder:
   defaults:
