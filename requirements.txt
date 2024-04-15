@@ -26,3 +26,4 @@ fastapi
 python-barcode==0.14.0
 unicodecsv
 json-parser
+sentry-sdk==1.9.0
