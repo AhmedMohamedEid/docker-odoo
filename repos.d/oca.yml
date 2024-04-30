@@ -128,7 +128,7 @@ contract:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    - moka $ODOO_VERSION
+    - origin refs/pull/959/head
     
 credit-control :
   defaults:
