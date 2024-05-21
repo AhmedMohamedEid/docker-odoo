@@ -28,3 +28,4 @@ unicodecsv
 json-parser
 sentry-sdk==1.9.0
 unidecode
+python-stdnum>=1.18
