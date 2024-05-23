@@ -44,7 +44,16 @@ account-invoicing:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-    
+
+account-invoice-reporting:
+      defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/account-invoice-reporting
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 account-financial-tools:
   remotes:
     origin: https://github.com/OCA/account-financial-tools
