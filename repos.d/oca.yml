@@ -45,7 +45,7 @@ account-invoicing:
     - origin $ODOO_VERSION
 
 account-invoice-reporting:
-      defaults:
+  defaults:
     depth: 1
   remotes:
     origin: https://github.com/OCA/account-invoice-reporting
