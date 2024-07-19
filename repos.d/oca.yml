@@ -469,3 +469,10 @@ open-upgrade:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+
+akretion:
+  remotes:
+    origin: https://github.com/akretion/account-move-export
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
