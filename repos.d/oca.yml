@@ -469,12 +469,3 @@ open-upgrade:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
-
-yaltik:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://moka:4SsmojJriRwfdbJpck7FggQpDkYDHH@git.yaltik.net/Yaltik/moka
-  merges:
-    - origin $ODOO_VERSION
-  target: origin $ODOO_VERSION
