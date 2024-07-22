@@ -221,6 +221,13 @@ moka-billetterie:
   merges:
     - origin 16.0-ticketing_modules_update_v2
 
+moka-infra:
+  remotes:
+    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-infra
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 mis-builder:
   defaults:
     depth: 1
