@@ -141,6 +141,13 @@ event:
     - moka 15.0-add-event-portal-ticket
     - moka 15.0-fix-event-mail-session
 
+hr-attendance:
+  remotes:
+    origin: https://github.com/OCA/hr-attendance
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 l10n-france:
   defaults:
     depth: 1
