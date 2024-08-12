@@ -186,6 +186,12 @@ event:
   merges:
     - origin $ODOO_VERSION
 
+hr-attendance:
+  remotes:
+    origin: https://github.com/OCA/hr-attendance
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
 
 knowledge:
   defaults:
