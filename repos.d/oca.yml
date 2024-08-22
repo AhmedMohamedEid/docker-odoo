@@ -451,6 +451,15 @@ timesheet:
   merges:
     - origin $ODOO_VERSION
 
+vertical-association:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/vertical-association
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 web:
   defaults:
     depth: 1
