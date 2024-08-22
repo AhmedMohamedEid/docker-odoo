@@ -315,6 +315,15 @@ social:
     - origin $ODOO_VERSION
     - origin refs/pull/933/head  # #1740 fix mail debrand
 
+vertical-association:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/vertical-association
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 web:
   defaults:
     depth: 1
