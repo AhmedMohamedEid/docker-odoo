@@ -277,6 +277,15 @@ pos:
     - origin $ODOO_VERSION
     - moka $ODOO_VERSION
 
+product-attribute:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/product-attribute
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 product-pack:
   defaults:
     depth: 1
@@ -286,11 +295,11 @@ product-pack:
   merges:
     - origin $ODOO_VERSION
 
-product-attribute:
+product-variant:
   defaults:
     depth: 1
   remotes:
-    origin: https://github.com/OCA/product-attribute
+    origin: https://github.com/OCA/product-variant
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
