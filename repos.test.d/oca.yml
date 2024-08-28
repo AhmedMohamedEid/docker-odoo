@@ -201,6 +201,15 @@ product-pack:
   merges:
     - origin $ODOO_VERSION
 
+product-variant:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/product-variant
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
+
 project:
   defaults:
     depth: 1
