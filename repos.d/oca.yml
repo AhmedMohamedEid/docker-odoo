@@ -76,6 +76,15 @@ account-reconcile:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+
+automation:
+  defaults:
+    depth: 1
+  remotes:
+    origin: https://github.com/OCA/automation
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
     
 bank-statement-import:
   defaults:
