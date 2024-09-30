@@ -236,6 +236,13 @@ moka-billetterie:
   merges:
     - origin 16.0-ticketing_modules_update_v2
 
+moka-custom:
+  remotes:
+    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-custom
+  target: origin 16.0
+  merges:
+    - origin 16.0
+
 moka-infra:
   remotes:
     origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-infra
