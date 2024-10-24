@@ -1,532 +1,532 @@
-account-analytic:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/account-analytic
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-agreement:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/agreement
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-account-budgeting:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/account-budgeting
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-#    - origin refs/pull/55/head # Accont Budget OCA
-
-account-closing:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/account-closing
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-account-invoicing:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/account-invoicing
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-account-invoice-reporting:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/account-invoice-reporting
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-account-financial-tools:
-  remotes:
-    origin: https://github.com/OCA/account-financial-tools
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    #- origin refs/pull/1301/head # account_check_deposit
-
-account-financial-reporting:
-  remotes:
-    origin: https://github.com/OCA/account-financial-reporting
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-account-reconcile:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/account-reconcile
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-automation:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/automation
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    
-bank-statement-import:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/bank-statement-import
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-brand:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/brand
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-bank-payment:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/bank-payment
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-community-data-files:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/community-data-files
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    
-connector:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/connector
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-connector-telephony:
-  remotes:
-    origin: https://github.com/OCA/connector-telephony
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-contract:
-  remotes:
-    origin: https://github.com/OCA/contract
-    moka: https://github.com/Moka-Tourisme/contract
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/959/head
-    
-credit-control :
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/credit-control
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-crm:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/crm
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-delivery-carrier:
-  remotes:
-    origin: https://github.com/OCA/delivery-carrier
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-e-commerce:
-  remotes:
-    origin: https://github.com/OCA/e-commerce
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    
-edi:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/edi
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-event:
-  remotes:
-    origin: https://github.com/OCA/event
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-hr-attendance:
-  remotes:
-    origin: https://github.com/OCA/hr-attendance
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-knowledge:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/knowledge
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-l10n-france:
-  remotes:
-    origin: https://github.com/OCA/l10n-france
-    moka: https://github.com/Moka-Tourisme/l10n-france
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    - moka $ODOO_VERSION
-
-margin-analysis:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/margin-analysis
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-moka-billetterie:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-billetterie
-  target: origin 16.0-ticketing_modules_update_v2
-  merges:
-    - origin 16.0-ticketing_modules_update_v2
-
-moka-custom:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-custom
-  target: origin 16.0
-  merges:
-    - origin 16.0
-
-moka-infra:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-infra
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    
-moka-welcome:
-  remotes:
-    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-welcome
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-mis-builder:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/mis-builder
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-mis-builder-contrib:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/mis-builder-contrib
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-partner-contact:
-  remotes:
-    origin: https://github.com/OCA/partner-contact
-    moka: https://github.com/Moka-Tourisme/partner-contact
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    - moka $ODOO_VERSION
-
-payment:
- remotes:
-   origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/payment
- merges:
-   - origin $ODOO_VERSION
- target: origin $ODOO_VERSION
-
-pos:
-  remotes:
-    origin: https://github.com/OCA/pos
-    moka: https://github.com/Moka-Tourisme/pos
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    - moka $ODOO_VERSION
-
-product-attribute:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/product-attribute
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-product-pack:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/product-pack
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-product-variant:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/product-variant
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-project:
-  remotes:
-    origin: https://github.com/OCA/project
-    moka: https://github.com/Moka-Tourisme/project
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    - moka $ODOO_VERSION
-    
-purchase-workflow:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/purchase-workflow
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-queue:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/queue
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-reporting-engine:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/reporting-engine
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-rest-framework:
-  remotes:
-    origin: https://github.com/OCA/rest-framework
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/416/head
-    
-sale-reporting:
-  remotes:
-    origin: https://github.com/OCA/sale-reporting
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-sale-promotion:
- remotes:
-   moka: https://github.com/Moka-Tourisme/sale-promotion
- target: moka $ODOO_VERSION
- merges:
-   - moka $ODOO_VERSION
-
-sale-workflow:
-  remotes:
-    origin: https://github.com/OCA/sale-workflow
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    - origin refs/pull/2325/head
-    - origin refs/pull/2450/head
-
-server-auth:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/server-auth
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-server-env:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/server-env
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-server-brand:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/server-brand
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-server-tools:
-  remotes:
-    origin: https://github.com/OCA/server-tools
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    #- origin refs/pull/2340/head # MIG iap_alternative_provider
-
-server-ux:
-  remotes:
-    origin: https://github.com/OCA/server-ux
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-social:
-  remotes:
-    origin: https://github.com/OCA/social
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-    #- origin refs/pull/933/head  # #1740 fix mail debrand
-
-spreadsheet:
-  remotes:
-    origin: https://github.com/OCA/spreadsheet
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-stock-logistics-availability:
-  remotes:
-    origin: https://github.com/OCA/stock-logistics-availability
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-stock-logistics-warehouse:
-  remotes:
-    origin: https://github.com/OCA/stock-logistics-warehouse
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-stock-logistics-barcode:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/stock-logistics-barcode
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-timesheet:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/timesheet
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-vertical-association:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/vertical-association
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-web:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/web
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-web-api:
-  defaults:
-    depth: 1
-  remotes:
-    origin: https://github.com/OCA/web-api
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-website:
-  remotes:
-    origin: https://github.com/OCA/website
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-open-upgrade:
-  remotes:
-    origin: https://github.com/OCA/OpenUpgrade
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
-
-akretion:
-  remotes:
-    origin: https://github.com/akretion/account-move-export
-  target: origin $ODOO_VERSION
-  merges:
-    - origin $ODOO_VERSION
+#account-analytic:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/account-analytic
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#agreement:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/agreement
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#account-budgeting:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/account-budgeting
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+##    - origin refs/pull/55/head # Accont Budget OCA
+#
+#account-closing:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/account-closing
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#account-invoicing:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/account-invoicing
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#account-invoice-reporting:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/account-invoice-reporting
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#account-financial-tools:
+#  remotes:
+#    origin: https://github.com/OCA/account-financial-tools
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#    #- origin refs/pull/1301/head # account_check_deposit
+#
+#account-financial-reporting:
+#  remotes:
+#    origin: https://github.com/OCA/account-financial-reporting
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#account-reconcile:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/account-reconcile
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#automation:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/automation
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#bank-statement-import:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/bank-statement-import
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#brand:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/brand
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#bank-payment:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/bank-payment
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#community-data-files:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/community-data-files
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#connector:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/connector
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#connector-telephony:
+#  remotes:
+#    origin: https://github.com/OCA/connector-telephony
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#contract:
+#  remotes:
+#    origin: https://github.com/OCA/contract
+#    moka: https://github.com/Moka-Tourisme/contract
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#    - origin refs/pull/959/head
+#
+#credit-control :
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/credit-control
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#crm:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/crm
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#delivery-carrier:
+#  remotes:
+#    origin: https://github.com/OCA/delivery-carrier
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#e-commerce:
+#  remotes:
+#    origin: https://github.com/OCA/e-commerce
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#edi:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/edi
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#event:
+#  remotes:
+#    origin: https://github.com/OCA/event
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#hr-attendance:
+#  remotes:
+#    origin: https://github.com/OCA/hr-attendance
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#knowledge:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/knowledge
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#l10n-france:
+#  remotes:
+#    origin: https://github.com/OCA/l10n-france
+#    moka: https://github.com/Moka-Tourisme/l10n-france
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#    - moka $ODOO_VERSION
+#
+#margin-analysis:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/margin-analysis
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#moka-billetterie:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-billetterie
+#  target: origin 16.0-ticketing_modules_update_v2
+#  merges:
+#    - origin 16.0-ticketing_modules_update_v2
+#
+#moka-custom:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-custom
+#  target: origin 16.0
+#  merges:
+#    - origin 16.0
+#
+#moka-infra:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-infra
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#moka-welcome:
+#  remotes:
+#    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-welcome
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#mis-builder:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/mis-builder
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#mis-builder-contrib:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/mis-builder-contrib
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#partner-contact:
+#  remotes:
+#    origin: https://github.com/OCA/partner-contact
+#    moka: https://github.com/Moka-Tourisme/partner-contact
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#    - moka $ODOO_VERSION
+#
+#payment:
+# remotes:
+#   origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/payment
+# merges:
+#   - origin $ODOO_VERSION
+# target: origin $ODOO_VERSION
+#
+#pos:
+#  remotes:
+#    origin: https://github.com/OCA/pos
+#    moka: https://github.com/Moka-Tourisme/pos
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#    - moka $ODOO_VERSION
+#
+#product-attribute:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/product-attribute
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#product-pack:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/product-pack
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#product-variant:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/product-variant
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#project:
+#  remotes:
+#    origin: https://github.com/OCA/project
+#    moka: https://github.com/Moka-Tourisme/project
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#    - moka $ODOO_VERSION
+#
+#purchase-workflow:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/purchase-workflow
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#queue:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/queue
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#reporting-engine:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/reporting-engine
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#rest-framework:
+#  remotes:
+#    origin: https://github.com/OCA/rest-framework
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#    - origin refs/pull/416/head
+#
+#sale-reporting:
+#  remotes:
+#    origin: https://github.com/OCA/sale-reporting
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#sale-promotion:
+# remotes:
+#   moka: https://github.com/Moka-Tourisme/sale-promotion
+# target: moka $ODOO_VERSION
+# merges:
+#   - moka $ODOO_VERSION
+#
+#sale-workflow:
+#  remotes:
+#    origin: https://github.com/OCA/sale-workflow
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#    - origin refs/pull/2325/head
+#    - origin refs/pull/2450/head
+#
+#server-auth:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/server-auth
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#server-env:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/server-env
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#server-brand:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/server-brand
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#server-tools:
+#  remotes:
+#    origin: https://github.com/OCA/server-tools
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#    #- origin refs/pull/2340/head # MIG iap_alternative_provider
+#
+#server-ux:
+#  remotes:
+#    origin: https://github.com/OCA/server-ux
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#social:
+#  remotes:
+#    origin: https://github.com/OCA/social
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#    #- origin refs/pull/933/head  # #1740 fix mail debrand
+#
+#spreadsheet:
+#  remotes:
+#    origin: https://github.com/OCA/spreadsheet
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#stock-logistics-availability:
+#  remotes:
+#    origin: https://github.com/OCA/stock-logistics-availability
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#stock-logistics-warehouse:
+#  remotes:
+#    origin: https://github.com/OCA/stock-logistics-warehouse
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#stock-logistics-barcode:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/stock-logistics-barcode
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#timesheet:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/timesheet
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#vertical-association:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/vertical-association
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#web:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/web
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#web-api:
+#  defaults:
+#    depth: 1
+#  remotes:
+#    origin: https://github.com/OCA/web-api
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#website:
+#  remotes:
+#    origin: https://github.com/OCA/website
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#open-upgrade:
+#  remotes:
+#    origin: https://github.com/OCA/OpenUpgrade
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION
+#
+#akretion:
+#  remotes:
+#    origin: https://github.com/akretion/account-move-export
+#  target: origin $ODOO_VERSION
+#  merges:
+#    - origin $ODOO_VERSION

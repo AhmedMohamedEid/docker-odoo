@@ -2,7 +2,7 @@ version: '2.4'
 
 services:
 
-  db:
+  db18:
     image: postgres:16
     environment:
       POSTGRES_USER: odoo
@@ -10,10 +10,10 @@ services:
       POSTGRES_DB: postgres
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
-      - postgres:/var/lib/postgresql/data/pgdata
+      - postgres18:/var/lib/postgresql/data/pgdata
 
-  odoo16:
-    image: ghcr.io/moka-mourisme/docker-moka:16.0
+  odoo18:
+    image: ghcr.io/moka-mourisme/docker-moka:18.0
     build:
       context: .
       dockerfile: Dockerfile
@@ -24,28 +24,28 @@ services:
       TZ: Europe/Paris
       LOG_LEVEL: info
       ADMIN_PASSWORD: admin
-      WORKERS: 2
-      LIMIT_TIME_CPU: 240
-      LIMIT_TIME_REAL: 360
+      WORKERS: 4
+      LIMIT_TIME_CPU: 99999
+      LIMIT_TIME_REAL: 99999
       LIMIT_MEMORY_SOFT: 5368709120
       LIMIT_MEMORY_HARD: 10737418240
       # Postgres
-      PGHOST: db
+      PGHOST: db18
       PGUSER: odoo
       PGPASSWORD: odoo
     init: true
     tty: true
     stdin_open: true
     depends_on:
-      - db
+      - db18
     ports:
       - 8069:8069
     volumes:
-      - filestore:/home/odoo/data
+      - filestore_18:/home/odoo/data
       # These modules are loaded with higher priority than the ones in the image
       # If a module has the same name, this one will be used.
       - ./custom_code:/home/odoo/src/user
 
 volumes:
-  postgres:
-  filestore:
+  postgres18:
+  filestore_18:
