@@ -249,6 +249,13 @@ moka-infra:
   target: origin $ODOO_VERSION
   merges:
     - origin $ODOO_VERSION
+    
+moka-welcome:
+  remotes:
+    origin: https://$GITHUB_TOKEN@github.com/Moka-Tourisme/moka-welcome
+  target: origin $ODOO_VERSION
+  merges:
+    - origin $ODOO_VERSION
 
 mis-builder:
   defaults:
